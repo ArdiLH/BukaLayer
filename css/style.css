@@ -1,0 +1,32 @@
+:root{--bg:#f3f0ff;--frame:#fff;--ink:#111;--muted:#6b6880;--card:#fff;--soft:#f6f4fb;--lime:#c6ff3d;--mag:#ff3df0;--yel:#ffe14d;--blue:#2f6bff;
+--bd:3px solid var(--ink);--sh:4px 4px 0 var(--ink);--r:24px;
+--fh:'Bricolage Grotesque','Arial Black',system-ui,sans-serif;--fb:'DM Sans',system-ui,-apple-system,'Segoe UI',sans-serif}
+[data-theme=dark]{--bg:#0e0b1a;--frame:#17132a;--ink:#f6f0e0;--muted:#a8a3bd;--card:#1f1a38;--soft:#241f40}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font:400 16px/1.6 var(--fb);padding:16px;min-height:100vh;overflow-x:hidden}
+h1,h2,h3{font-family:var(--fh);font-weight:800;line-height:1.05;letter-spacing:-.02em;text-transform:uppercase}
+a{color:inherit}
+img,svg{max-width:100%}
+.skip{position:absolute;left:-999px;top:8px;background:var(--yel);color:#111;padding:8px 14px;border:var(--bd);border-radius:12px;z-index:99}
+.skip:focus{left:16px}
+:focus-visible{outline:3px solid var(--mag);outline-offset:3px}
+.frame{max-width:1180px;margin:0 auto;background:var(--frame);border:4px solid var(--ink);border-radius:32px;overflow:hidden;padding:20px 24px 28px}
+main{outline:none;padding-top:8px}
+main.in{animation:swap .22s ease}
+@keyframes swap{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.topbar{position:sticky;top:0;z-index:20;padding-bottom:8px;background:var(--frame)}
+.pill{display:flex;align-items:center;justify-content:space-between;gap:12px;border:var(--bd);border-radius:999px;padding:8px 12px 8px 18px;background:var(--card)}
+.logo{display:flex;align-items:center;gap:8px;text-decoration:none;font:800 20px var(--fh);letter-spacing:-.03em}
+.logo b{background:var(--ink);color:var(--frame);padding:0 7px;border-radius:8px;margin-left:2px}
+.links{display:flex;gap:4px}
+.links a{text-decoration:none;font-weight:700;font-size:14px;padding:6px 14px;border-radius:999px}
+.links a:hover{background:var(--soft)}
+.links a.active{background:var(--ink);color:var(--frame)}
+.tools{display:flex;gap:6px}
+.foot{margin-top:40px;text-align:center;color:var(--muted);font-size:14px}
+.sec{margin-top:48px}
+.sec>h2{font-size:clamp(28px,4vw,44px);text-align:center;margin-bottom:8px}
+.sec>.sub{text-align:center;color:var(--muted);max-width:56ch;margin:0 auto 28px}
+mark{background:var(--ink);color:var(--frame);padding:0 .18em;border-radius:.15em;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}

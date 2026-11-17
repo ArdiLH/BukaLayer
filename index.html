@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>BukaLayer — Buka Satu Layer. Temukan Dunia Baru.</title>
+<meta name="description" content="BukaLayer: 10 hal baru setiap hari dari sains, sejarah, matematika, teknologi, dan lainnya.">
+<link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@700;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/components.css">
+<link rel="stylesheet" href="css/responsive.css">
+<script>try{var t=JSON.parse(localStorage.getItem('bukalayer.v1')||'{}').theme;if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+</head>
+<body>
+<a class="skip" href="#view">Lewati ke konten</a>
+<div class="frame">
+  <header class="topbar">
+    <nav class="pill" aria-label="Navigasi utama">
+      <a class="logo" href="#/home" aria-label="BukaLayer, ke beranda">
+        <svg viewBox="0 0 32 32" width="26" height="26" aria-hidden="true"><rect x="2" y="2" width="28" height="28" rx="8" fill="#c6ff3d" stroke="currentColor" stroke-width="3"/><circle cx="16" cy="16" r="8" fill="#ff3df0" stroke="currentColor" stroke-width="3"/><circle cx="16" cy="16" r="3" fill="#ffe14d" stroke="currentColor" stroke-width="2"/></svg>
+        <span>Buka<b>Layer</b></span>
+      </a>
+      <div class="links">
+        <a data-route="home" href="#/home">Home</a>
+        <a data-route="daily" href="#/daily">Daily 10</a>
+        <a data-route="jelajah" href="#/jelajah">Jelajah</a>
+        <a data-route="bookmark" href="#/bookmark">Bookmark</a>
+        <a data-route="progres" href="#/progres">Progres</a>
+      </div>
+      <div class="tools">
+        <button class="ibtn" id="themeBtn" data-action="theme" aria-label="Ganti tema terang/gelap">🌙</button>
+        <a class="ibtn" data-route="settings" href="#/settings" aria-label="Pengaturan">⚙️</a>
+      </div>
+    </nav>
+  </header>
+  <main id="view" tabindex="-1"></main>
+  <footer class="foot"><p><b>BukaLayer</b> — Unlock a New Layer of Knowledge. Semua materi tersimpan lokal di browser kamu.</p></footer>
+</div>
+<nav class="bottomnav" aria-label="Navigasi bawah">
+  <a data-route="home" href="#/home"><span>🏠</span>Home</a>
+  <a data-route="daily" href="#/daily"><span>📚</span>Daily 10</a>
+  <a data-route="surprise" href="#/surprise" class="mid"><span>🎲</span>Surprise</a>
+  <a data-route="bookmark" href="#/bookmark"><span>★</span>Bookmark</a>
+  <a data-route="progres" href="#/progres"><span>📈</span>Progres</a>
+</nav>
+<div id="toast" role="status" aria-live="polite"></div>
+<script src="js/data.js"></script>
+<script src="js/storage.js"></script>
+<script src="js/learning.js"></script>
+<script src="js/quiz.js"></script>
+<script src="js/navigation.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
